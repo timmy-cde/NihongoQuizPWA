@@ -1,7 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {
-  getFirestore,
   initializeFirestore,
   persistentLocalCache,
   persistentSingleTabManager,
@@ -27,5 +26,3 @@ export const db = initializeFirestore(app, {
     /*settings*/ { tabManager: persistentSingleTabManager() }
   ),
 });
-
-// export const db = getFirestore(app);
